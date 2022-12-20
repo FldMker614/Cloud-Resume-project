@@ -1,0 +1,37 @@
+AWSTemplateFormatVersion: '2010-09-09' 
+Description: Template to create s3 bucket and policy
+
+Parameters:
+
+  BucketName:
+    Type: String
+    Description: Bucket Name
+    Default: erichssamdeploycloudresumebucket
+
+Resources:
+
+  MyS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Description: Cloud Bucket 
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+      BucketName: !Ref BucketName
+          
+  MyS3BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref MyS3Bucket
+      PolicyDocument:
+        Statement:
+          -
+            Action:
+              - s3:*
+            Effect: Allow
+            Resource:
+              - !Sub arn:aws:s3:::${MyS3Bucket}
+              - !Sub arn:aws:s3:::${MyS3Bucket}/*
+            Principal:
+              AWS:
+                - '*'

@@ -15,14 +15,16 @@ body
 .navigation
 {
     position: fixed;
+    z-index: 2;
     top: 20px;
     left: 20px;
-    bottom: 20px;
+    height:700px;
     width: 205px;
     border-radius: 10px;
-    border-left: 5px solid #5b5f8b;
-    background: #5b5f8b;
+    border-left: 4px solid #ffffff11;
+    background: #5b5f8bf9;
     transition: 0.5s;
+    box-shadow: -35px -15px 150px -15px rgba(255, 255, 255, 0.332),2px 2px 50px 2px rgba(0, 0, 0, 0.279);
 }
 .navigation ul
 {
@@ -45,6 +47,7 @@ body
     border-color: #3b3d8d;
     border-width: 3.5px;
     border-style: solid;
+    box-shadow: 0px 0px 20px 0px rgba(179, 179, 179, 0.271), 3px 8px 20px 2px rgba(0, 0, 0, 0.271);
 }
 
 .navigation ul li
@@ -73,6 +76,7 @@ body
     text-decoration: none;
     color: #d1def8;
 }
+
 .navigation ul li.active a
 {
     color: #333;
@@ -85,7 +89,6 @@ body
     height: 60px;
     top: 15px;
     text-align: center;
-
 }
 .navigation ul li a .icon ion-icon
 {
@@ -100,63 +103,8 @@ body
     height: 60px;
     line-height: 60px;
     white-space: normal;
-}
-
-
-.resume
-{
-    position:relative;
-    top: 100%;
-    left: 300px;
-    bottom: 20px;
-    width: 77.5%;
-    height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
-    transition: 0.5s;
-    padding-right: 40px;
-    padding-bottom: 40px;
-}
-.resume p
-{
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-
-.Home
-{
-    position: relative;
-    left: 45%;
-    top: 30%;
-    background-color:#d1def8;
-    border: 2px solid rgb(175, 188, 213);
-    border-radius: 10px;
-    width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    animation: fadeIn 1s;
-    text-align: center;
-}
-@keyframes fadeIn
-{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
-}
-.Home a
-{
-    font-size: 40px;
-}
-.Home span
-{
-    position: relative;
-    display: inline-block;
-    font-size: 40px;
-    color: #333;
-    text-transform: uppercase;
     animation: flip 0.7s 1;
-    animation-delay: calc(.05s * var(--i));
+    animation-delay: calc(.03s * var(--i));
 }
 @keyframes flip
 {
@@ -165,10 +113,284 @@ body
         transform: rotateY(360deg);
     }
 }
-.titleBar
+.Home
+{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    background-color:#d1def800;
+    border: 2px solid rgb(175, 188, 213);
+    border-radius: 10px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: fadeIn 1s;
+    text-align: center;
+    box-shadow: -5px -5px 14px 2px rgba(255, 255, 255, 0.405), 4px 4px 10px 2px rgba(196, 196, 196, 0.674);
+}
+@keyframes fadeIn
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.Home span
 {
     position: relative;
-    height: 60px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px#6f6f70b1;
+    font-size: 40px;
+    color: rgba(70, 70, 70, 0.799);
+    animation: flip 0.7s 1;
+    animation-delay: calc(.03s * var(--i));
+}
+@keyframes flip
+{
+    0%,10%
+    {
+        transform: rotateY(360deg);
+    }
+}
+@keyframes fadeIn
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.Header
+{
+    position: relative;
+    height: 80px;
     width: 100%;
-    background-color: #333;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Header2
+{
+    position: relative;
+    top: 80%;
+    height: 80px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Profile
+{
+    position: relative;
+    align-self: flex-start;
+    top: 80%;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #d2d5ed;
+    background: #e1e2f1;
+    transition: 0.5s;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.Profile h1
+{
+    position: relative;
+    text-shadow: 1px 1px 1px#6f6f70b1;
+    color: rgba(70, 70, 70, 0.799);
+    font-size: 40px;
+    top: 20px;
+    padding-left: 300px;
+}
+.Profile h2
+{
+    position: relative;
+    text-shadow: 1px 1px 1px#6f6f70b1;
+    color: rgba(70, 70, 70, 0.799);
+    font-size: 30px;
+    top: 20px;
+    padding-left: 300px;
+}
+.Profile h2 a
+{
+    text-shadow: 1px 1px 1px#6f6f70b1;
+    color: rgba(70, 70, 70, 0.799);
+    font-size: 40px;
+    animation: fadeIn 1s infinite;
+}
+@keyframes fadeIn
+{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.ProfileBar
+{
+    position: relative;
+    top: 80%;
+    height: 20px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+
+.Skills
+{
+    position: relative;
+    align-self: flex-start;
+    top: 80%;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #d2d5ed;
+    background: #e1e2f1;
+    transition: 0.5s;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.SKills p
+{
+    position: relative;
+    top: 20px;
+    padding-left: 300px;
+}
+.SkillsBar
+{
+    position: relative;
+    top: 80%;
+    height: 20px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Projects
+{
+    position: relative;
+    align-self: flex-start;
+    top: 80%;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #d2d5ed;
+    background: #e1e2f1;
+    transition: 0.5s;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.Projects p
+{
+    position: relative;
+    top: 20px;
+    padding-left: 300px;
+}
+.ProjectsBar
+{
+    position: relative;
+    top: 80%;
+    height: 20px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Experience
+{
+    position: relative;
+    align-self: flex-start;
+    top: 80%;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #d2d5ed;
+    background: #e1e2f1;
+    transition: 0.5s;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.Experience p
+{
+    position: relative;
+    top: 20px;
+    padding-left: 300px;
+}
+.ExperienceBar
+{
+    position: relative;
+    top: 80%;
+    height: 20px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Education
+{
+    position: relative;
+    align-self: flex-start;
+    top: 80%;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid #d2d5ed;
+    background: #e1e2f1;
+    transition: 0.5s;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+.Education p
+{
+    position: relative;
+    top: 20px;
+    padding-left: 300px;
+}
+.EducationBar
+{
+    position: relative;
+    top: 80%;
+    height: 20px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Tailer
+{
+    position: relative;
+    top: 80%;
+    height: 160px;
+    width: 100%;
+    background-color: #333333f4;
+    border-bottom: 3px solid;
+    border-color: #0000001e;
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    z-index: 1;
+}
+.Tailer ul
+{
+    padding-left: 80%;
+}
+.Tailer ul .icon
+{
+    position: relative;
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    top: 50px;
+    padding-left: 30px;
+}
+.Tailer ul .icon ion-icon
+{
+    font-size: 2em;
+    position: relative;
 }

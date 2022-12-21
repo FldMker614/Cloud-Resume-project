@@ -452,9 +452,14 @@ body
     position: relative;
     display: inline-block;
     min-width: 30px;
-    height: 30px;
+    height: 50px;
     top: 50px;
-    padding-left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Tailer ul .icon:hover
+{
+    background-color: rgba(80, 80, 80, 0.47);
 }
 .Tailer ul .icon ion-icon
 {

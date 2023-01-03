@@ -186,7 +186,11 @@ body
     position: fixed;
     left: 85%;
 }
-.Header ul .icon
+.Header ul a
+{
+    text-decoration: none;
+}
+.Header ul a .icon
 {
     position: relative;
     display: inline-block;
@@ -198,11 +202,11 @@ body
     color:#d1def8;
     z-index: 2;
 }
-.Header ul .icon:hover
+.Header ul a .icon:hover
 {
     background-color: rgba(80, 80, 80, 0.47);
 }
-.Header ul .icon ion-icon
+.Header ul a .icon ion-icon
 {
     font-size: 2em;
     position: relative;
@@ -214,10 +218,8 @@ body
     align-self: flex-start;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
     transition: 0.5s;
+    padding-left: 32.5%;
     padding-right: 40px;
     padding-bottom: 40px;
 }
@@ -256,12 +258,15 @@ body
 .ProfileBar
 {
     position: relative;
-    height: 20px;
-    width: 100%;
-    background-color: #333333f4;
+    top: 10px;
+    left: 25%;
+    height: 1px;
+    margin-top: 100px;
+    width:70%;
+    background-color: #33333333;
     border-bottom: 3px solid;
-    border-color: #0000001e;
-    box-shadow: -1px 10px 10px rgba(0, 0, 0, 0.674);
+    border-color: #0000000e;
+    border-radius: 100%;
     z-index: 1;
 }
 
@@ -271,10 +276,8 @@ body
     align-self: flex-start;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
     transition: 0.5s;
+    padding-left: 32.5%;
     padding-right: 40px;
     padding-bottom: 40px;
 }
@@ -307,12 +310,14 @@ body
 .SkillsBar
 {
     position: relative;
-    height: 20px;
-    width: 100%;
-    background-color: #333333f4;
+    top: 10px;
+    left: 25%;
+    height: 1px;
+    width:70%;
+    background-color: #33333333;
     border-bottom: 3px solid;
-    border-color: #0000001e;
-    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    border-color: #0000000e;
+    border-radius: 100%;
     z-index: 1;
 }
 .Projects
@@ -321,10 +326,8 @@ body
     align-self: flex-start;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
     transition: 0.5s;
+    padding-left: 32.5%;
     padding-right: 40px;
     padding-bottom: 40px;
 }
@@ -356,12 +359,14 @@ body
 .ProjectsBar
 {
     position: relative;
-    height: 20px;
-    width: 100%;
-    background-color: #333333f4;
+    top: 10px;
+    left: 25%;
+    height: 1px;
+    width:70%;
+    background-color: #33333333;
     border-bottom: 3px solid;
-    border-color: #0000001e;
-    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    border-color: #0000000e;
+    border-radius: 100%;
     z-index: 1;
 }
 .Experience
@@ -370,10 +375,8 @@ body
     align-self: flex-start;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
     transition: 0.5s;
+    padding-left: 32.5%;
     padding-right: 40px;
     padding-bottom: 40px;
 }
@@ -405,12 +408,14 @@ body
 .ExperienceBar
 {
     position: relative;
-    height: 20px;
-    width: 100%;
-    background-color: #333333f4;
+    top: 10px;
+    left: 25%;
+    height: 1px;
+    width:70%;
+    background-color: #33333333;
     border-bottom: 3px solid;
-    border-color: #0000001e;
-    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    border-color: #0000000e;
+    border-radius: 100%;
     z-index: 1;
 }
 .Education
@@ -419,12 +424,10 @@ body
     align-self: flex-start;
     width: 100%;
     height: fit-content;
-    border-radius: 10px;
-    border: 2px solid #d2d5ed;
-    background: #e1e2f1;
     transition: 0.5s;
+    padding-left: 32.5%;
     padding-right: 40px;
-    padding-bottom: 40px;
+    margin-bottom: 100px;
 }
 .Education h1
 {
@@ -454,12 +457,14 @@ body
 .EducationBar
 {
     position: relative;
-    height: 20px;
-    width: 100%;
-    background-color: #333333f4;
+    top: 10px;
+    left: 25%;
+    height: 1px;
+    width:70%;
+    background-color: #33333333;
     border-bottom: 3px solid;
-    border-color: #0000001e;
-    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.674);
+    border-color: #0000000e;
+    border-radius: 100%;
     z-index: 1;
 }
 .Tailer
@@ -478,7 +483,11 @@ body
     position: relative;
     padding-left: 330px;
 }
-.Tailer ul .icon
+.Tailer ul a
+{
+    text-decoration: none;
+}
+.Tailer ul a .icon
 {
     position: relative;
     display: inline-block;
@@ -487,12 +496,13 @@ body
     top: 30px;
     padding: 10px;
     border-radius: 10px;
+    color:#1f1f1f;
 }
-.Tailer ul .icon:hover
+.Tailer ul a .icon:hover
 {
     background-color: rgba(80, 80, 80, 0.47);
 }
-.Tailer ul .icon ion-icon
+.Tailer ul a .icon ion-icon
 {
     font-size: 2em;
     position: relative;
